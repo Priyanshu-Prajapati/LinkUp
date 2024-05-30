@@ -1,9 +1,6 @@
-// import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:social_media_app/models/messages.dart';
-// import 'package:http/http.dart' as http;
-
 import 'package:like_button/like_button.dart';
 import 'dart:io'; // Import the 'dart:io' library for platform detection
 
@@ -31,13 +28,7 @@ class _MessageItemState extends State<MessageItem> {
 
   Future<bool> saveLikeCount(bool isLiked) async {
     final messageKey = 'isLiked_${widget.message.id}';
-    // if (!isLiked) {
-    //   likeCount++;
-    // } else {
-    //   likeCount = (likeCount > 0) ? likeCount - 1 : 0;
-    // }
     getStorage.write(messageKey, !isLiked);
-    // getStorage.write('likeCount_${widget.message.id}', likeCount);
     setState(() {
       this.isLiked = !isLiked;
     });
