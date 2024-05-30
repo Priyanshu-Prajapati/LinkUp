@@ -1,9 +1,9 @@
 # social_media_app
 
-This is flutter social media app
-Where Users can login/Register to the app and access it
-Users can have fun with the other users chatting posting and chill out there
-Users can just come here and chill around
+This is flutter social media app.
+Where Users can login/Register to the app and access it.
+Users can have fun with the other users chatting posting and chill out there.
+Users can just come here and chill around.
 
 ## Getting Started
 
